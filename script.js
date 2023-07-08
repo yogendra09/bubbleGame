@@ -9,8 +9,15 @@
                     tim--;
                   
                 }
+                else if(tim===0){
+                  document.querySelector("#container").innerHTML = '';
+                  document.querySelector("#container").innerHTML = '<h1>Game Over</h1>';
+
+
+                }
                 document.querySelector("#timer").textContent = tim ;
             },1000)
+
           
          }
 
